@@ -1,0 +1,201 @@
+#about h1 {
+    font-weight: bolder;
+    font-size: 5vw;
+    text-align: center;
+    color: #630251;
+}
+
+.imgs {
+    height: 17rem;
+    width: 22rem;
+    border: 0.6vw solid white;
+}
+
+.imgb {
+    height: 17rem;
+    width: 22rem;
+    border: 0.6vw solid rgb(97, 17, 173);
+}
+
+.bl p {
+    padding: 5%;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.bl h2 {
+    text-align: center;
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+
+.bl {
+    float: right;
+    background-color: white;
+    width: 30%;
+    margin-right: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+}
+
+.br {
+    float: left;
+}
+
+.backgrounda {
+    background-color: rgb(97, 17, 173);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50vw;
+}
+
+.objective {
+    height: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.or {
+    float: left;
+    margin-right: 10%;
+}
+
+.ol {
+    float: left;
+    background-color: rgb(97, 17, 173);
+    color: white;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
+}
+
+.ol p {
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.ol h2 {
+    /* margin-top: 3vw; */
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+        height: 182rem;
+    }
+
+    #about h1 {
+        font-weight: bolder;
+        font-size: 10vw;
+        text-align: center;
+        color: #630251;
+    }
+
+    #content {
+        height: 140rem;
+    }
+
+    .imgs {
+        height: 17rem;
+        width: 100%;
+        border: 2vw solid white;
+    }
+
+    .imgb {
+        height: 17rem;
+        width: 100%;
+        border: 2vw solid rgb(97, 17, 173);
+    }
+
+    .backgrounda {
+        background-color: rgb(97, 17, 173);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 38rem;
+        margin-bottom: 5%;
+    }
+
+    .bl {
+        margin: 10% 10% 0% 10%;
+        background-color: white;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4vw;
+    }
+
+    .bl p {
+        padding: 5%;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .br {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-top: 2%;
+    }
+
+    .bl h2 {
+        text-align: center;
+        font-size: 5vw;
+        margin-top: 2vw;
+    }
+
+    .objective {
+        background-color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 50rem;
+        margin-bottom: 5%;
+    }
+
+    .ol {
+        float: left;
+        background-color: rgb(97, 17, 173);
+        color: white;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4vw;
+        /* height: 50%; */
+    }
+
+    .ol h2 {
+        font-size: 5vw;
+        padding-top: 4%;
+    }
+
+    .ol p {
+        padding: 5%;
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .or {
+        width: 80%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-right: 0px;
+    }
+}

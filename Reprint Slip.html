@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nsukka Vocational Skill and Talent Competition Registration Slip</title>
+    <link rel = "icon" href ="https://res.cloudinary.com/nsukka-talent-and-skill-competition-and-award/image/upload/v1627513933/ntsc-wbesite-pictures/logo_bbb9mf.png" type = "image/x-icon">
+		<style>
+			.invoice-box {
+				max-width: 80vw;
+				margin: auto;
+				padding: 3vw;
+				border: 1px solid #eee;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				color: #555;
+			}
+
+            p {
+                font-weight: bolder;
+                font-size: 1.5vw;
+            }
+
+            #verification-form {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+			@media only screen and (max-width: 600px) {
+				
+			}
+
+            @media print {
+                body {
+                    -webkit-print-color-adjust: exact !important;
+                }
+
+                .button {
+                    display: none;
+                }
+
+                .receipt {
+                    background-color: gray;
+                }
+            }
+		</style>
+</head>
+
+    <body>
+		<div class="invoice-box">
+            <img src="https://res.cloudinary.com/nsukka-talent-and-skill-competition-and-award/image/upload/v1627513080/ntsc-wbesite-pictures/cropped-NVSTC-Web-logo-1-1_qqpvx5.png" style="width: 20vw; max-width: 30vw" />
+            <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 3.5vw; height: 10vw; display: flex; align-items: center; justify-content: center; text-align: center;">NSUKKA TALENT AND SKILL <br> COMPETITION AND AWARD <br>2021</h2>
+			
+            <div class="receipt" style="width: 100%; text-align: center; background-color: gray;">
+                <h3 id="reprintSlip" style="color: black; font-size: 2vw;">Registration Slip Reprint</h3>
+                <h3 id="slip" style="color: black; display: none; font-size: 2vw;">Registration Slip</h3>
+            </div>
+            <h4 id="instruction" style="width: 100%; text-align: center;">Click <a href="Registration Slip.html" style="text-decoration: none; color: blue;">HERE!</a> if you have not uploaded your proof of payment</h4>
+
+            <div id="form-div" style="width: 100%; text-align: center;">
+                <form id="reprint-form">
+                    <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" style="width: 30vw; height: 2vw; margin-bottom: 2%;"> <br>
+                    <p id="numberp" style="font-size: x-small; font-style: italic; display: none; font-weight: bold;  width: 100%; margin: 0px; color: red;"></p> <br>
+                    <button id="reprint-btn" style="width: 10vw; height: 3vw; background-color: blueviolet; outline: none; border: none;"><p style="margin: 0px; text-align: center; font-size: 1.5vw; display: flex; align-items: center; justify-content: center;">Submit</p></button>
+                </form>
+            </div>
+
+            <div id="user-info" style="width: 100%; margin-left: 5%; display: none;">
+                <p>Name: <span id="name"></span></p>
+                <p>Email: <span id="email-d"></span></p>
+                <p>Phone Number: <span id="number"></span></p>
+                <p>Category: <span id="category"></span></p>
+            </div>
+            <div id="img" style="width: 100%; text-align: center; margin-top: 5%; display: none;">
+                <img id="proof-img" src="" style="width: 20vw; height: 30vw;" />
+            </div>
+		</div>
+        <div class="button" style="width: 80vw; margin-top: 2%;">
+            <a href="./index.html" style="text-decoration: none; color: black; float: left; margin-left: 7vw; width: 15vw; height: 3vw; background-color: blueviolet; outline: none; border: none;  display: flex; align-items: center; justify-content: center;"><p style="margin: 0px; text-align: center; font-size: 1.5vw;">Back to Home</p></a>
+            <button id="print" onclick="window.print()" style="float: right; width: 10vw; display: none; height: 3vw; background-color: blueviolet; outline: none; border: none;"><p style="margin: 0px; text-align: center; font-size: 1.5vw; display: flex; align-items: center; justify-content: center;">Print</p></button>
+        </div>
+        <script src="./jquery-3.5.0.js"></script>
+        <script src="./Registration Slip.js"></script>
+	</body>
+</html>
